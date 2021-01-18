@@ -14,7 +14,7 @@ namespace DeepSearchStack
                new []{ 5, 8, 0, 2, 9},
                new []{ 1, 6, 2, 0, 1},
                new []{ 5, 10, 9, 1, 0}
-            }, 0, 4);
+            });
             foreach (var v in s.Search(0,1))
             {
                 Console.Write($"{v}->");
