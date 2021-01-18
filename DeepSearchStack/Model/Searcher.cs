@@ -70,6 +70,7 @@ namespace DeepSearchStack
 
                 var sp = state.ShortestPath;
                 var sl = state.ShortestLength;
+                if(_stack.IsEmpty) continue;
                 state = _stack.Pull();
                 state.ShortestPath = sp;
                 state.ShortestLength = sl;

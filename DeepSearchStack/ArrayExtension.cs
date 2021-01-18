@@ -93,6 +93,18 @@ namespace DeepSearchStack
             }
             Console.WriteLine();
         }
+        public static void PrintArray<T>(this T[][] grid)
+        {
+            for (int i = 0; i < grid[0].Length ; i++)
+            {
+                for (int j = 0; j < grid[0].Length; j++)
+                {
+                    Console.Write($"{grid[i][j]}\t");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
 
     }
 }
